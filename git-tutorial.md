@@ -4,6 +4,25 @@
 - 変更した箇所に戻ることができる
 - 他人と共同編集できる
 
+## gitの設定
+- グローバルセッティング
+    - ホスト（OS）全体のgitの設定
+- git config –global
+- git config –global user.name yourname
+- git config –global user.email yourname@example.com
+
+## gitによる共同編集（コンフリクト）
+- git stash
+    - 一時退避
+- originにあるindex.htmlとローカルのindex.htmlの比較
+    - git diff origin -- index.html
+- 一時退避
+    - git stash
+- originからプル（同期）
+    - git pull
+- 一時退避したものの変更を加える
+    - git stash pop
+
 ## コミット
 - [ファイル作成／変更／削除]の記録
 - 対象ファイルは一つでも複数でもよい
@@ -44,25 +63,6 @@
     - リモートブランチ（origin/main）と紐付ける設定
 - origin
     - リモートでのデフォルトのサーバー
-
-## gitの設定
-- グローバルセッティング
-    - ホスト（OS）全体のgitの設定
-- git config –global
-- git config –global user.name yourname
-- git config –global user.email yourname@example.com
-
-## gitによる共同編集（コンフリクト）
-- git stash
-    - 一時退避
-- originにあるindex.htmlとローカルのindex.htmlの比較
-    - git diff origin -- index.html
-- 一時退避
-    - git stash
-- originからプル（同期）
-    - git pull
-- 一時退避したものの変更を加える
-    - git stash pop
 
 ## ブランチマージのコンフリクトの対処例
 - git merge --abort 
