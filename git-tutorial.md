@@ -25,10 +25,10 @@
     - ***staged***
         - staging areaに登録されたファイルの状態
     - Gitディレクトリ
-    - コミット(commit)により変更を登録
-    - commitは原則、変更・削除できない
-    - commitの変更・削除も記録として残る
-    - commitされたファイルはunmodifiedの状態になる
+        - コミット(commit)により変更を登録
+        - commitは原則、変更・削除できない
+        - commitの変更・削除も記録として残る
+        - commitされたファイルはunmodifiedの状態になる
 2. リモートレポジトリ
     - 共有の管理場所
         - Github/Gitlab など
@@ -38,6 +38,41 @@
 ## ブランチ
 - 作業を枝分かれさせることができる
 - 共同作業・並行作業が可能
+
+## 追跡するブランチの設定
+- git branch --set-upstream-to origin/main
+    - リモートブランチ（origin/main）と紐付ける設定
+- origin
+    - リモートでのデフォルトのサーバー
+
+## gitの設定
+- グローバルセッティング
+    - ホスト（OS）全体のgitの設定
+- git config –global
+- git config –global user.name yourname
+- git config –global user.email yourname@example.com
+
+## gitによる共同編集（コンフリクト）
+- git stash
+    - 一時退避
+- originにあるindex.htmlとローカルのindex.htmlの比較
+    - git diff origin -- index.html
+- 一時退避
+    - git stash
+- originからプル（同期）
+    - git pull
+- 一時退避したものの変更を加える
+    - git stash pop
+
+## ブランチマージのコンフリクトの対処例
+- git merge --abort 
+    - main ブランチを、マージを試行する前の状態に復元
+    - git pull コマンドを実行して、マージ先の変更を取得
+    - 新しいブランチを作成し、変更を行って、そのブランチを main ブランチにマージ
+    - 変更をプッシュ
+- git reset --hard
+    - マージを開始する前の状態に戻す
+    - 影響を受けたファイルに Git によって挿入された情報を使用して、手動で解決
 
 ## 既出のgitコマンド（設定・確認系）
 - git init
@@ -54,43 +89,43 @@
 
 ## 既出のgitコマンド（コミット系）
 - git add
--- ステージングエリアに追加
+    - ステージングエリアに追加
 - git commit 
-- コミットの実行
+    - コミットの実行
 
 ## 既出のgitコマンド（修正系）
 - git commit --amend --no-edit
--- コミットの修正
+    - コミットの修正
 - git checkout
--- 削除されたファイルを復旧や過去コミットの復元など（元に戻す変更がstaging area/index内にある場合）
+    - 削除されたファイルを復旧や過去コミットの復元など（元に戻す変更がstaging area/index内にある場合）
 - git reset
--- コミットのリセット
+    - コミットのリセット
 - git revert
--- 「コミットの変更を打ち消す」コミット
+    - 「コミットの変更を打ち消す」コミット
 - git rm
--- ファイルとindex情報の削除
+    - ファイルとindex情報の削除
 
 ## 既出のgitコマンド（リモート系）
 - git clone
--- レポジトリをコピー
+    - レポジトリをコピー
 - git pull
--- リモートレポジトリの同期	
+    - リモートレポジトリの同期	
 - git push
--- 変更をアップロードする
+    - 変更をアップロードする
 - git request-pull
--- プルリクエスト：変更依頼
+    - プルリクエスト：変更依頼
 - git remote
--- リモートレポジトリの設定
+    - リモートレポジトリの設定
 
 ## 既出のgitコマンド（ブランチ系）
 - git branch
--- ブランチの作成
+    - ブランチの作成
 - git checkout
--- ブランチの切り替え
+    - ブランチの切り替え
 - git merge
--- ブランチの統合
--- --ff-only: fast forward only. 変更のない統合先ブランチにマージ（参考）
+    - ブランチの統合
+    - --ff-only: fast forward only. 変更のない統合先ブランチにマージ（参考）
 - git clone
--- レポジトリをコピー
+    - レポジトリをコピー
 - git push
-- 変更をアップロードする
+    - 変更をアップロードする
