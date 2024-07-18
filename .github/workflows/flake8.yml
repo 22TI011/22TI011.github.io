@@ -25,10 +25,10 @@ jobs:
 
     - name: Analysing the code with flake8
       run: |
-        flake .  > flake8_report.txt || true
+        flake8 .  > flake8_report.txt || true
 
     - name: Upgrade flake8 report
       uses: actions/upload-artifact@v4
       with:
         name: flake8-report
-        path: flake_report.txt
+        path: flake8_report.txt
