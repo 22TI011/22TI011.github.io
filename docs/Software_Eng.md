@@ -1,8 +1,8 @@
--
+---
 layout: page
 title: "ソフトウェア工学概論"
 permalink: /docs/Software_Eng
--
+---
 
 # ソフトウェア
 
