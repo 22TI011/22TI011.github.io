@@ -12,7 +12,7 @@ git/github演習
 
 [1.ソフトウェア工学概論](/docs/Software_Eng)
 
-[2.プロジェクトマネジメント](/docs/Pro.-Mng)
+[2.プロジェクトマネジメント](/docs/Pro_Mng)
 
 [3.WBS](/docs/WBS)
 
@@ -22,4 +22,4 @@ git/github演習
 
 [6.UML](/docs/UML)
 
-[7.バージョン管理](/docs/Ver.-Mng)
+[7.バージョン管理](/docs/Ver_Mng)
