@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "プロジェクトマネジメント"
-permalink: /docs/Pro.-Mng
+permalink: /docs/Pro_Mng
 ---
 
 # プロジェクト

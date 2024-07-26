@@ -16,10 +16,8 @@ git/github演習
 
 [3.WBS](/docs/WBS)
 
-[4.ソフトウェア工開発プロセス](/docs/Software_Pros)
+[4.コーディング](/docs/Cording)
 
-[5.コーディング](/docs/Cording)
+[5.UML](/docs/UML)
 
-[6.UML](/docs/UML)
-
-[7.バージョン管理](/docs/Ver_Mng)
+[6.バージョン管理](/docs/Ver_Mng)

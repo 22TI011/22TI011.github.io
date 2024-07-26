@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "WBS"
-permalink: /docs/Ver.-Mng
+permalink: /docs/Ver_Mng
 ---
 
 # バージョン管理
