@@ -14,10 +14,12 @@ git/github演習
 
 [2.プロジェクトマネジメント](/docs/Pro_Mng)
 
-[3.WBS](/docs/WBS)
+[3.ソフトウェア開発プロセス](/docs/Software_Pros)
 
-[4.コーディング](/docs/Cording)
+[4.WBS](/docs/WBS)
 
-[5.UML](/docs/UML)
+[5.コーディング](/docs/Cording)
 
-[6.バージョン管理](/docs/Ver_Mng)
+[6.UML](/docs/UML)
+
+[7.バージョン管理](/docs/Ver_Mng)
